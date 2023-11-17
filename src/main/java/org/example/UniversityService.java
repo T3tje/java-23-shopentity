@@ -41,5 +41,14 @@ public class UniversityService {
         return newStudentList;
     }
 
+    /* Mit .stream()
+    public List<Student> retrieveAllStudents(University university) {
+        return university.courses().stream()
+                .flatMap(course -> course.getStudents().stream())
+                .filter(student -> student.getGrade() >= 2)
+                .collect(Collectors.toList());
+    }
+    * */
+
 
 }
